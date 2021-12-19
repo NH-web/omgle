@@ -12,17 +12,8 @@ print ("[+] Connecting to Databases........")
 time.sleep(2)
 print ("[+] Getting and Colecting More Info.....")
 time.sleep(1)
-print ("""
-                                                    _       
-                                                   | |      
-__      _____    __ _ _ __ ___   _ __ ___  __ _  __| |_   _ 
-\ \ /\ / / _ \  / _` | '__/ _ \ | '__/ _ \/ _` |/ _` | | | |
- \ V  V /  __/ | (_| | | |  __/ | | |  __/ (_| | (_| | |_| |
-  \_/\_/ \___|  \__,_|_|  \___| |_|  \___|\__,_|\__,_|\__, |
-                                                       __/ |
-                                                      |___/ 
-""")
-cmd = r'C:\Program Files\Wireshark\tshark.exe -i "Wi-Fi 2"'
+
+cmd = r'Wireshark\tshark.exe -i "Wi-Fi 2"'
 
 process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 my_ip = socket.gethostbyname(socket.gethostname())
